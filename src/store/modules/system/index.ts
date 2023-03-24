@@ -1,0 +1,39 @@
+import { defineStore } from 'pinia';
+
+// 1.定义容器
+// 参数1： 容器的ID，必须唯一，将来pinia会把所有容器挂载到根容器
+// 参数2： 选项对象
+
+export default defineStore('system', {
+  state: () => {
+    return {
+      config: {
+        backgroundImage: {
+          type: 'linear',
+          src: '0deg, #D9AFD9 0%, #97D9E1 100%',
+        },
+        /* 页面滤镜 */
+        filter: {
+          /* 透明度 */
+          opacity: 0,
+          /* 模糊度 */
+          blur: 0,
+          /* 灰度 */
+          grayscale: 0,
+          /* 亮度 */
+          brightness: 0,
+        },
+
+        setting: {
+          /* 页面标题 */
+          title: '轻音',
+          /* 网页图标 */
+          icon: '',
+        },
+        theme: '',
+        copyright: `© 2023 | IN 广州 | ICP 备xxx号闽公网安备 00000000 号`,
+      },
+    };
+  },
+  persist: true,
+});

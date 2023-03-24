@@ -2,7 +2,7 @@
 
 #### 在线预览
 
-https://in-git.gitee.io/in-tools/#/
+http://in-git.gitee.io/in-nav/#/
 
 #### 风格
 

@@ -41,6 +41,11 @@ export const linkList = ref([
         title: '在线PS',
         icon: getWebIcon('https://ps.gaoding.com/#/'),
       },
+      {
+        src: 'https://cli.im/',
+        title: '二维码',
+        icon: getWebIcon('https://cli.im/'),
+      },
     ],
   },
   {

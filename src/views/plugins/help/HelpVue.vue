@@ -52,7 +52,7 @@
 
   const videoList = ref([
     {
-      title: '更换背景',
+      title: '视频教程',
       // src: '//player.bilibili.com/player.html?aid=226065509&bvid=BV1Mb411Z7iS&cid=1056130808&page=1',
       src: '',
     },

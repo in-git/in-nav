@@ -32,6 +32,8 @@ export default defineStore('system', {
         },
         theme: '',
         copyright: `© 2023 | IN 广州 | ICP 备xxx号闽公网安备 00000000 号`,
+        // 春分、清明、立夏、小满、夏至、大暑、立秋、白露、秋分、寒露、立冬、小雪、冬至
+        version: '春分',
       },
     };
   },

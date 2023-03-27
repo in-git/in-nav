@@ -41,5 +41,5 @@ export default defineConfig({
       javascriptEnabled: true,
     },
   },
-  base: '/in-tools/',
+  base: '/in-nav/',
 });

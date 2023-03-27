@@ -14,8 +14,12 @@
     background: #333;
   }
 }
-*{
-  transition:all 0s !important;
+* {
+  transition: all 0s !important;
+  &::selection {
+    background-color: #141313;
+    color: white;
+  }
 }
 html,
 body {

@@ -42,4 +42,7 @@ export default defineConfig({
     },
   },
   base: '/in-nav/',
+  server: {
+    port: 9000,
+  },
 });

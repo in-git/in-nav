@@ -20,7 +20,7 @@
         </li>
       </ul>
       <div class="flex-1 flex flex-s">
-        <!-- <iframe
+        <iframe
           v-show="loading"
           :src="currentVideo"
           scrolling="no"
@@ -33,9 +33,10 @@
           marginwidth="0"
           @load="canplay"
         >
-        </iframe> -->
-
-        <div class="w-100 h-100 flex flex-s loading"> 正在开发中,敬请期待 </div>
+        </iframe>
+        <div v-show="!loading" class="w-100 h-100 flex flex-s loading">
+          正在加载中
+        </div>
       </div>
     </div>
   </VueDraggable>
@@ -52,9 +53,8 @@
 
   const videoList = ref([
     {
-      title: '视频教程',
-      // src: '//player.bilibili.com/player.html?aid=226065509&bvid=BV1Mb411Z7iS&cid=1056130808&page=1',
-      src: '',
+      title: '壁纸设定',
+      src: '//player.bilibili.com/player.html?aid=824201465&bvid=BV1Vg4y137XM&cid=1073592467&page=1',
     },
   ]);
   const currentVideo = ref(videoList.value[0].src);

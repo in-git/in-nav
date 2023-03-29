@@ -1,0 +1,1 @@
+import{d as n,a,aG as o,x as s,y as u,p as r}from"./arco.3de35d46.js";const d=n({__name:"default-layout",setup(l){const t=a(!1),e=a(!1);return r("toggleDrawerMenu",()=>{e.value=!e.value}),o(()=>{t.value=!0}),(c,i)=>(s(),u("div",null," \u9996\u9875\u4FE1\u606F "))}});export{d as default};

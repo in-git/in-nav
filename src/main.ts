@@ -16,7 +16,6 @@ import '@/api/interceptor';
 const app = createApp(App);
 
 app.use(ArcoVueIcon);
-
 app.use(router);
 app.use(store);
 app.use(globalComponents);

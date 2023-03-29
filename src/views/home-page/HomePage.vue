@@ -35,6 +35,9 @@
 
     <!-- 多开应用 -->
     <MultipleApplications />
+
+    <!-- 欢迎 -->
+    <WelcomeVue />
   </div>
 
   <!-- 小于1280的系统警告 -->
@@ -53,6 +56,7 @@
   } from '@/store/modules/system/utils';
   import { isImage } from '@/utils/reg';
   import { homePageContextmenu } from '@/static/functions';
+
   import PluginVue from '../plugins/PluginVue.vue';
   import SearchVue from './SearchVue.vue';
   import SystemApplication from './SystemApplication.vue';
@@ -61,6 +65,7 @@
   import Copyright from './Copyright.vue';
   import PhoneApp from '../phone/PhoneApp.vue';
   import MultipleApplications from '../multiple-applications/MultipleApplications.vue';
+  import WelcomeVue from './WelcomeVue.vue';
 
   const wallpaperConfig = ref({
     scale: 1,

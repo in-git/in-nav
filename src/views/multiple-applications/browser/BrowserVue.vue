@@ -6,7 +6,7 @@
     :w="iframe.w"
     :h="iframe.h"
     title="内嵌网页"
-    :resizable="false"
+    :resizable="true"
     @on-close="close"
   >
     <iframe

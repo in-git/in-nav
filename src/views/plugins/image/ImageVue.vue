@@ -9,12 +9,12 @@
       title="图片处理"
     >
       <div class="image-container h-100 flex flex-s">
-        <img
+        <a-image
           v-if="imageConfig.src"
+          width="400"
           :src="imageConfig.src"
           :style="style"
-          width="400"
-        />
+        ></a-image>
         <div v-else>
           <a-button type="primary" @click="uploadFile">上传图片</a-button>
         </div>

@@ -52,9 +52,9 @@ export const linkList = ref([
     type: 'ai',
     list: [
       {
-        src: 'https://extnav.com/chatbot/one/',
+        src: 'https://chat.wuguokai.cn/s/chatgpt',
         title: '在线chatGPT',
-        icon: getWebIcon('https://extnav.com/chatbot/one/'),
+        icon: getWebIcon('https://chat.wuguokai.cn/s/chatgpt'),
       },
       {
         src: 'https://cc.ai55.cc/',

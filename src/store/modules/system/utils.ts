@@ -47,3 +47,10 @@ export const setCopyright = (copyright: string) => {
   if (!copyright) return;
   storeToRefs(systemStore()).config.value.copyright = copyright;
 };
+
+export const getWelcome = () => {
+  return storeToRefs(systemStore()).config.value.welcome;
+};
+export const setWelcome = (value: boolean) => {
+  storeToRefs(systemStore()).config.value.welcome = value;
+};

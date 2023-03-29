@@ -1,10 +1,11 @@
 <template>
   <div v-clickoutside="() => (showApp = false)" class="application">
     <div @click.stop="showApp = true">
-      <icon-settings
+      <!-- <icon-settings
         class="border-circle p-4 cursor-pointer dark-icon text-20"
         style="border: 1px solid white"
-      />
+      /> -->
+      <img src="../../assets/logo.png" width="20" alt="logo" class="logo" />
     </div>
     <div v-if="showApp" class="app-container">
       <InDraggable
@@ -102,6 +103,14 @@
       width: 300px;
       background-color: white;
       border-radius: 8px;
+    }
+    .logo {
+      background-color: rgba(255, 255, 255, 0.568);
+      border: 1px solid #eee;
+      border-radius: 50%;
+      padding: 4px;
+      cursor: pointer;
+      box-shadow: 0 0 25px #20202027;
     }
   }
   .dark-icon {

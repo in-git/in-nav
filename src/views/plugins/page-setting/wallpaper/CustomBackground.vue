@@ -17,7 +17,7 @@
       <a-list-item>
         <ARow justify="space-between">
           <ACol :span="4">
-            <div class="text-666 text-12">自定义地址</div>
+            <div class="text-666 text-12 flex align-center">自定义地址</div>
           </ACol>
           <ACol :span="12" class="flex">
             <a-input

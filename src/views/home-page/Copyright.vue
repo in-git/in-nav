@@ -1,22 +1,22 @@
 <template>
-  <div class="copyright flex justify-center">
+  <div class="memo flex justify-center">
     <div class="px-12">
-      {{ copyright }}
+      {{ memo }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  import { getCopyright } from '@/store/modules/system/utils';
+  import { getMemo } from '@/store/modules/system/utils';
   import { computed } from 'vue';
 
-  const copyright = computed(() => {
-    return getCopyright();
+  const memo = computed(() => {
+    return getMemo();
   });
 </script>
 
 <style lang="scss" scoped>
-  .copyright {
+  .memo {
     color: white;
     position: fixed;
     width: 100vw;

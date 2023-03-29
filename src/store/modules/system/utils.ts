@@ -40,12 +40,12 @@ export const getTheme = () => {
 export const setTheme = (color: string) => {
   storeToRefs(systemStore()).config.value.theme = color;
 };
-export const getCopyright = () => {
-  return storeToRefs(systemStore()).config.value.copyright;
+export const getMemo = () => {
+  return storeToRefs(systemStore()).config.value.memo;
 };
-export const setCopyright = (copyright: string) => {
-  if (!copyright) return;
-  storeToRefs(systemStore()).config.value.copyright = copyright;
+export const setMemo = (memo: string) => {
+  if (!memo) return;
+  storeToRefs(systemStore()).config.value.memo = memo;
 };
 
 export const getWelcome = () => {

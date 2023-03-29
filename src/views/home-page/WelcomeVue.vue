@@ -9,7 +9,11 @@
     </div>
     <a-divider class="mb-16 mt-8" />
     <div class="welcome-body flex-1 p-8 flex flex-col">
-      <div class="flex-1 flex flex-s"> {{ tips[current] }}</div>
+      <div class="flex-1 flex flex-s">
+        <div class="text-20 w-80 text-center">
+          {{ tips[current] }}
+        </div>
+      </div>
       <div class="flex justify-center gc-4">
         <a-button
           status="success"
@@ -28,6 +32,7 @@
   import { ref } from 'vue';
 
   const tips = [
+    '本产品将根据用户需求开发功能,即将上线评论互动功能',
     'chatGPT在最上面的工具栏,其他工具在右下角',
     '桌面支持鼠标右键,可以拖拽文件到主页试试，解锁更多功能',
     '浏览器支持多开,更多功能去探索吧',

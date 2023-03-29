@@ -38,15 +38,17 @@
 
         <a-row justify="space-between">
           <a-col :span="8">
-            <div class="settings-title text-666">版权信息</div></a-col
-          >
+            <div class="settings-title text-666">摘要</div>
+          </a-col>
           <a-col :span="8">
             <a-input
-              v-model.trim="copyright"
+              v-model.trim="memoTemp"
               placeholder="输入版权信息"
               :auto-size="{ minRows: 2, maxRows: 5 }"
               size="mini"
               allow-clear
+              @press-enter="comfirm"
+              @blur="comfirm"
             />
           </a-col>
         </a-row>
@@ -71,14 +73,21 @@
 <script setup lang="ts">
   import InColorPicker from '@/components/color-picker/InColorPicker.vue';
   import {
-    getCopyright,
+    getMemo,
     getSetting,
     getTheme,
+    setMemo,
     setTheme,
   } from '@/store/modules/system/utils';
-  import { ref } from 'vue';
+  import { onMounted, ref } from 'vue';
 
-  const copyright = ref(getCopyright());
+  const memoTemp = ref();
+  onMounted(() => {
+    memoTemp.value = getMemo();
+  });
+  function comfirm() {
+    setMemo(memoTemp.value);
+  }
   /**
    * todo: 选择颜色
    *

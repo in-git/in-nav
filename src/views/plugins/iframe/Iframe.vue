@@ -5,7 +5,7 @@
     :y="position.y"
     :w="iframe.w"
     :h="iframe.h"
-    title="内嵌网页"
+    title="浏览器"
   >
     <iframe
       :key="update"

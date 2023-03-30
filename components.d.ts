@@ -24,6 +24,7 @@ declare module '@vue/runtime-core' {
     AListItem: typeof import('@arco-design/web-vue')['ListItem']
     APopconfirm: typeof import('@arco-design/web-vue')['Popconfirm']
     APopover: typeof import('@arco-design/web-vue')['Popover']
+    AppItem: typeof import('./src/components/app-item/AppItem.vue')['default']
     AResult: typeof import('@arco-design/web-vue')['Result']
     ARow: typeof import('@arco-design/web-vue')['Row']
     ASlider: typeof import('@arco-design/web-vue')['Slider']
@@ -36,7 +37,10 @@ declare module '@vue/runtime-core' {
     ATimelineItem: typeof import('@arco-design/web-vue')['TimelineItem']
     ATooltip: typeof import('@arco-design/web-vue')['Tooltip']
     ATypographyParagraph: typeof import('@arco-design/web-vue')['TypographyParagraph']
+    InColorPicker: typeof import('./src/components/color-picker/InColorPicker.vue')['default']
+    InDraggable: typeof import('./src/components/draggable/InDraggable.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VueDraggable: typeof import('./src/components/draggable/VueDraggable.vue')['default']
   }
 }

@@ -1,6 +1,9 @@
 <template>
-  <div class="search-input flex flex-s">
-    <div class="w-80 flex input-container align-center">
+  <div class="search-input flex flex-s flex-col">
+    <div class="mb-30">
+      <img src="../../assets/logo.svg" width="64" alt="" />
+    </div>
+    <div class="flex input-container align-center">
       <div class="page-icon flex flex-s">
         <a-popover
           v-model:popup-visible="hidEnginePopover"
@@ -116,7 +119,6 @@
   .search-input {
     position: fixed;
     width: 98vw;
-    height: 100px;
     max-width: 400px;
 
     overflow: hidden;
@@ -128,6 +130,8 @@
       overflow: hidden;
       border: 1px solid #eee;
       background-color: white;
+      line-height: 48px;
+      width: 90vw;
     }
     input {
       width: 100%;

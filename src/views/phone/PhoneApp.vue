@@ -1,9 +1,15 @@
 <template>
-  <div class="app-phone flex flex-s">
-    <input v-focus placeholder="在这里输入内容进行搜索" />
+  <div class="app-phone flex flex-s" :style="style">
     <!-- 壁纸 -->
-    <div class="wallpaper w-100 h-100 absolute" :style="style"> </div>
+
+    <div class="wallpaper w-100 h-100 absolute"> </div>
     <SearchBox />
+  </div>
+  <div class="tips fixed t-0 w-100">
+    <a-alert closable>更多功能请到手机客户端访问</a-alert>
+  </div>
+  <div class="fixed b-0 gpt">
+    <a-avatar :style="{ backgroundColor: '#FFC72E' }">G</a-avatar>
   </div>
 </template>
 
@@ -47,8 +53,11 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-color: #eee;
       transition: transform 0.2s !important;
     }
+  }
+  .gpt {
+    right: 40px;
+    bottom: 40px;
   }
 </style>

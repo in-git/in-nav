@@ -62,8 +62,8 @@
           background-color: white;
           border-radius: 50%;
           padding: 6px;
-          width: 16px;
-          height: 16px;
+          width: 30px;
+          height: 30px;
         }
       }
     }

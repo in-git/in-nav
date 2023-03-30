@@ -8,6 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AAlert: typeof import('@arco-design/web-vue')['Alert']
+    AAvatar: typeof import('@arco-design/web-vue')['Avatar']
     AButton: typeof import('@arco-design/web-vue')['Button']
     ACol: typeof import('@arco-design/web-vue')['Col']
     ACollapse: typeof import('@arco-design/web-vue')['Collapse']
@@ -23,7 +24,7 @@ declare module '@vue/runtime-core' {
     AListItem: typeof import('@arco-design/web-vue')['ListItem']
     APopconfirm: typeof import('@arco-design/web-vue')['Popconfirm']
     APopover: typeof import('@arco-design/web-vue')['Popover']
-    AResult: typeof import('@arco-design/web-vue')['Result']
+    AppItem: typeof import('./src/components/app-item/AppItem.vue')['default']
     ARow: typeof import('@arco-design/web-vue')['Row']
     ASlider: typeof import('@arco-design/web-vue')['Slider']
     ASpace: typeof import('@arco-design/web-vue')['Space']
@@ -31,11 +32,15 @@ declare module '@vue/runtime-core' {
     ATabPane: typeof import('@arco-design/web-vue')['TabPane']
     ATabs: typeof import('@arco-design/web-vue')['Tabs']
     ATag: typeof import('@arco-design/web-vue')['Tag']
+    ATextarea: typeof import('@arco-design/web-vue')['Textarea']
     ATimeline: typeof import('@arco-design/web-vue')['Timeline']
     ATimelineItem: typeof import('@arco-design/web-vue')['TimelineItem']
     ATooltip: typeof import('@arco-design/web-vue')['Tooltip']
     ATypographyParagraph: typeof import('@arco-design/web-vue')['TypographyParagraph']
+    InColorPicker: typeof import('./src/components/color-picker/InColorPicker.vue')['default']
+    InDraggable: typeof import('./src/components/draggable/InDraggable.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VueDraggable: typeof import('./src/components/draggable/VueDraggable.vue')['default']
   }
 }

@@ -16,8 +16,9 @@
 }
 * {
   transition: all 0s !important;
+  box-sizing:  border-box !important;
   &::selection {
-    background-color: #141313;
+    background-color: #313131;
     color: white;
   }
 }

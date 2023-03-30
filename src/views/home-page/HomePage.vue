@@ -38,6 +38,9 @@
 
     <!-- 欢迎 -->
     <WelcomeVue />
+
+    <!-- 用户中心 -->
+    <UserVue />
   </div>
 
   <!-- 小于1280的系统警告 -->
@@ -66,6 +69,7 @@
   import PhoneApp from '../phone/PhoneApp.vue';
   import MultipleApplications from '../multiple-applications/MultipleApplications.vue';
   import WelcomeVue from './WelcomeVue.vue';
+  import UserVue from '../user/UserVue.vue';
 
   const wallpaperConfig = ref({
     scale: 1,

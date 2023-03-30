@@ -30,7 +30,7 @@
     display: grid;
     place-items: center;
     img {
-      $wh: 24px;
+      $wh: 30px;
       background-color: white;
       border-radius: 50%;
       padding: 4px;
